@@ -1,0 +1,9 @@
+server:
+  port: 8094
+
+spring:
+  data:
+    mongodb:
+      database: SearchDB
+      host: localhost
+      port: 27017

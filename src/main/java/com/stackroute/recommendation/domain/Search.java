@@ -12,7 +12,6 @@ import org.springframework.data.annotation.Id;
 @ToString
 public class Search {
 
-
     private String searchString;
     private String sessionId;
 }

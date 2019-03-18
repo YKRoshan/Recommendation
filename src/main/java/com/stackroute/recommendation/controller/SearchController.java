@@ -54,6 +54,7 @@ public class SearchController {
     public ResponseEntity<?> savedNlpResult(@RequestBody NlpResult nlpResult){
         ResponseEntity responseEntity;
         try {
+            System.out.println("Inside concept");
             nlpResultService.saveNlpResult(nlpResult);
             responseEntity = new ResponseEntity<String>("Successfully created", HttpStatus.CREATED);
 

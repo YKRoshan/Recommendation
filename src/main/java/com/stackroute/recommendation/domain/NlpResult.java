@@ -12,8 +12,6 @@ import org.springframework.data.annotation.Id;
 @ToString
 public class NlpResult {
 
-    @Id
-    private String id;
     private String intent;
     private String concept;
     private String sessonId;

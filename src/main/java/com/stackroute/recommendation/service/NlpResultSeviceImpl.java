@@ -20,7 +20,7 @@ public class NlpResultSeviceImpl implements NlpResultService{
 
     @Override
     public NlpResult saveNlpResult(NlpResult nlpresult){
-        if(nlpresultRepository.existsById(nlpresult.getSessonId())){
+        if(nlpresultRepository.existsBySessonId(nlpresult.getSessonId())){
             System.out.println("NlpResult already exits");
         }
         NlpResult savedNlpResult = nlpresultRepository.save(nlpresult);
